@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #262626;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    .header {
+        text-align: center;
+        padding: 60px 0;
+        .logo {
+            width: 180px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #ffff;
+            font-weight: 600;
+            font-size: 26px;
+            margin-bottom: 3px;
+        }
+        .subTitle {
+            color: #000;
+            background-color: #ffff;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 2px 0;
+            border-radius: 3px;
+            user-select: none;
+            transition: .4s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .linksContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+        .link {
+            width: 100%;
+            text-align: center;
+            a {
+                display: block;
+                border: 1px solid #717171c3;
+                border-radius: 2px;
+                padding: 10px 14px;
+                width: 100%;
+                color: #fff;
+                transition: .4s;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 2px;
+                &:hover {
+                    transform: scale(1.2);
+                    background-color: #717171c3;
+                }
+            }
+            
+            
+        }
+    }
+    .footer {
+        p {
+            color: #c5c2c2;
+            text-decoration: underline;
+            font-size: 14px;
+            font-weight: 500;
+            user-select: none;
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+}
